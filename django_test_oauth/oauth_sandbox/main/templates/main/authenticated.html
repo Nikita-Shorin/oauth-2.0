@@ -1,0 +1,19 @@
+<p>Hello, {{ user.username }}!</p>
+<p>Django user params:</p>
+<li>
+    <ul>id: {{user.pk}}</ul>
+    <ul>username: {{user.username}}</ul>
+    <ul>first_name: {{user.first_name}}</ul>
+    <ul>last_name: {{user.last_name}}</ul>
+    <ul>email: {{user.email}}</ul>
+</li>
+
+<p>SocialAccount user params:</p>
+<li>
+    <ul>owner: {{soc_user.user.pk}}</ul>
+    <ul>provider: {{soc_user.provider}}</ul>
+    <ul>uid: {{soc_user.uid}}</ul>
+    <ul>extra_data: {{soc_user.extra_data}}</ul>
+</li>
+
+<a href={% url 'logout'%}>logout</a>
